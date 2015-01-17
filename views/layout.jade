@@ -1,8 +1,21 @@
 doctype html
 html
-	head
-		title= title
-		link(rel="stylesheet", href="bootstrap.min.css")
-	body
-		div.container
-			block content
+    head
+        title #{title}
+        link(rel="stylesheet", href="bootstrap.min.css")
+    body
+        header
+            h1 #{title}
+        div.container
+            div.links
+                div.home#link
+                    text HOME
+                div.about#link
+                    text ABOUT
+                div.categories#link
+                    text CATEGORIES
+                div.contact#link
+                    text CONTACT
+            block content
+        footer
+            block footer

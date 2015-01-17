@@ -22,15 +22,29 @@ function getImages(callback){
     })
 }
 
-function setData(data) {
-    _500pxData = data;
+function setData(d) {
+    _500pxData = d;
 }
 
 getImages(setData);
 
 exports.index = function (req, res) {
 	res.render('index', {
-		title: 'Coding Challenge - Jesse Rafalko', 
+		title: 'Code Challenge - Jesse Rafalko', 
+		_500pxData: _500pxData.photos[0].image_url,
+        data: data});
+};
+
+exports.categories = function (req, res) {
+	res.render('categories', {
+		title: 'Code Challenge - Jesse Rafalko', 
+		_500pxData: _500pxData.photos[0].image_url,
+        data: data});
+};
+
+exports.contact = function (req, res) {
+	res.render('contact', {
+		title: 'Code Challenge - Jesse Rafalko', 
 		_500pxData: _500pxData.photos[0].image_url,
         data: data});
 };
