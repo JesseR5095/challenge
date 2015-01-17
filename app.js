@@ -30,4 +30,6 @@ app.get('/categories/', routes.categories);
 app.get('/categories/:number', routes.categories);
 app.get('/contact', routes.contact);
 
-app.listen(3000);
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
