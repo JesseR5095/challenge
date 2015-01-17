@@ -8,7 +8,7 @@ header {
     position:absolute; 
     right:0;
     left:0;
-    height:120px;
+    height:100px;
     top:0;
     width: 600px;
     margin-left: auto;
@@ -19,9 +19,9 @@ div.container {
     position:absolute; 
     right:0;
     left:0;
-    top:120px;
+    top:100px;
     bottom:60px;
-    overflow:hidden;
+    overflow:scroll;
 }
 
 div.links {
@@ -58,6 +58,10 @@ div.categories a {
 
 div.contact a {
 
+}
+
+div.imageGrid img {
+    
 }
 
 footer {

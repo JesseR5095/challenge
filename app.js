@@ -26,7 +26,8 @@ app.use(function (req, res, next) {
 
 app.get('/', routes.index);
 app.get('/index', routes.index);
-app.get('/categories', routes.categories);
+app.get('/categories/', routes.categories);
+app.get('/categories/:number', routes.categories);
 app.get('/contact', routes.contact);
 
 app.listen(3000);

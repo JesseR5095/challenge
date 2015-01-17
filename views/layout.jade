@@ -2,8 +2,8 @@ doctype html
 html
     head
         title #{title}
-        link(rel="stylesheet", href="bootstrap.min.css")
-        link(rel="stylesheet", href="custom.css")
+        link(rel="stylesheet", href="/bootstrap.min.css")
+        link(rel="stylesheet", href="/custom.css")
     body
         header
             h1 #{title}
@@ -13,7 +13,7 @@ html
                 div.categories#link
                     a(href="/categories") #{data.pages.categories.title}
                 div.contact#link
-                    a(href="contact") #{data.pages.contact.title}
+                    a(href="/contact") #{data.pages.contact.title}
         div.container
             block content
         footer
