@@ -30,21 +30,21 @@ getImages(setData);
 
 exports.index = function (req, res) {
 	res.render('index', {
-		title: 'Code Challenge - Jesse Rafalko', 
-		_500pxData: _500pxData.photos[0].image_url,
+		title: 'Code Challenge - Dendrite Corps.', 
+		_500pxData: _500pxData,
         data: data});
 };
 
 exports.categories = function (req, res) {
 	res.render('categories', {
-		title: 'Code Challenge - Jesse Rafalko', 
-		_500pxData: _500pxData.photos[0].image_url,
+		title: 'Code Challenge - Dendrite Corps.', 
+		_500pxData: _500pxData,
         data: data});
 };
 
 exports.contact = function (req, res) {
 	res.render('contact', {
-		title: 'Code Challenge - Jesse Rafalko', 
-		_500pxData: _500pxData.photos[0].image_url,
+		title: 'Code Challenge - Dendrite Corps.', 
+		_500pxData: _500pxData,
         data: data});
 };

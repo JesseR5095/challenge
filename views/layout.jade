@@ -3,19 +3,18 @@ html
     head
         title #{title}
         link(rel="stylesheet", href="bootstrap.min.css")
+        link(rel="stylesheet", href="custom.css")
     body
         header
             h1 #{title}
-        div.container
             div.links
-                div.home#link
-                    text HOME
                 div.about#link
-                    text ABOUT
+                    a(href="/index") #{data.pages.about.title}
                 div.categories#link
-                    text CATEGORIES
+                    a(href="/categories") #{data.pages.categories.title}
                 div.contact#link
-                    text CONTACT
+                    a(href="contact") #{data.pages.contact.title}
+        div.container
             block content
         footer
-            block footer
+            h3 Jesse Rafalko

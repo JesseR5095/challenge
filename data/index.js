@@ -15,7 +15,7 @@ module.exports = {
         },
         "contact": {
             "title": "Contact",
-            "content": "<font>Email : andrew@andrewrowat.com <br> Tel: +1 (718) 576.1770 (USA)<br>Tel: +86 1381.726.8869 (China)</font>"
+            "content": "<p>Email : Jesse.Rafalko@gmail.com <br> Tel: +1 (555) 865.1853 (USA)<br>Location: Moscow, PA</p>"
         }
     }
 };

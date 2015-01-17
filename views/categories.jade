@@ -3,6 +3,4 @@ extends layout
 block content
     h2 #{data.pages.categories.title}
     div.imageGrid
-        img(src=_500pxData)
-block footer
-    h2 footer
+        img(src=_500pxData.photos[0].image_url)
