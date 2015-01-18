@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-var data = require('../data/index');
+var data = require('../data/index.json');
 
 var https = require('https');
 
