@@ -20,7 +20,10 @@ module.exports = {
         },
         "contact": {
             "title": "Contact",
-            "content": "<p>Email : Jesse.Rafalko@gmail.com <br> Tel: +1 (555) 865.1853 (USA)<br>Location: Moscow, PA</p>"
+            "content": [
+            "Email : Jesse.Rafalko@gmail.com",
+            "Tel: +1 (555) 380.1853 (USA)",
+            "Location: Moscow, PA"]
         }
     }
 };
