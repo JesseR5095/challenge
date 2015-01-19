@@ -1,0 +1,85 @@
+@baseColor: #535353;
+
+body {
+    min-width: : 600px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    color: @baseColor;
+}
+
+header {
+    position:absolute; 
+    background-color: lighten(@baseColor, 50%);
+    right:0;
+    left:0;
+    height:100px;
+    top:0;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.container {
+    position:absolute; 
+    right:0;
+    left:0;
+    top:100px;
+    bottom:60px;
+    overflow:scroll;
+}
+
+div.links {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#link {
+    position:relative;
+    padding-right: 20px;
+    float: left;
+    display: block;
+}
+
+#link a {
+    /*position:absolute; */
+    display: inline-block;
+    width:100%; 
+    height:100%; 
+    top:0; 
+    left:0; 
+    text-decoration:none; /* Makes sure the link   doesn't get underlined */ 
+    z-index:10; /* raises anchor tag above everything else in div */ 
+}
+
+div.about a {
+
+}
+
+div.categories a {
+
+}
+
+div.contact a {
+
+}
+
+div.imageGrid img {
+
+}
+
+footer {
+    position:absolute; 
+    right:0;
+    left:0;
+    height:60px;
+    bottom:0;
+}
+
+footer h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
