@@ -55,7 +55,7 @@ div.links {
 }
 
 div.about a {
-
+    
 }
 
 div.categories a {
@@ -64,6 +64,19 @@ div.categories a {
 
 div.contact a {
 
+}
+
+.EDGE-146736390 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.imageGrid {
+    position:absolute;
+    -webkit-animation: moveDown 2s; /* Chrome, Safari, Opera */
+    animation: moveDown 2s;
 }
 
 div.imageGrid img {
@@ -82,4 +95,16 @@ footer h3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveDown {
+    from {top: 0px;}
+    to {top: 440px;}
+}
+
+/* Standard syntax */
+@keyframes moveDown {
+    from {top: 0px;}
+    to {top: 440px;}
 }

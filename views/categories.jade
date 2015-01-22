@@ -1,5 +1,21 @@
 extends layout
 
+block header
+    script(type='text/javascript').
+        var local_data =!{JSON.stringify(viewerData)};
+    script(type="text/javascript" charset="utf-8" src="/edge.5.0.1.min.js")
+    style
+        ! .edgeLoad-EDGE-146736390 { visibility:hidden; }
+    script(type="text/javascript").
+        AdobeEdge.loadComposition('/Image%20Viewer', 'EDGE-146736390', {
+        scaleToFit: "none",
+        centerStage: "none",
+        minW: "0",
+        maxW: "undefined",
+        width: "900px",
+        height: "400px"
+        }, {dom: [ ]}, {dom: [ ]});
+
 block content
     h2 #{data.pages.categories.title}
     div.frozen#link
@@ -11,8 +27,9 @@ block content
     div.hyper#link
         a(href="/categories/3") #{data.pages.categories.content[3]}
     br
-    div.imageGrid        
-         each photo, index in _500pxData.photos
+    div#Stage.EDGE-146736390
+    div.imageGrid
+        each photo, index in _500pxData.photos
             - photo = _500pxData.photos[index].image_url       
             a(href= data.pages.categories.links[num])
-                img(src=photo)
+              img(src=photo)
