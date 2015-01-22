@@ -117,6 +117,16 @@
                             '1'
                         ],
                         [
+                            "eid59",
+                            "opacity",
+                            1925,
+                            1250,
+                            "linear",
+                            "${innerShadow}",
+                            '0.000000',
+                            '1'
+                        ],
+                        [
                             "eid68",
                             "display",
                             0,
@@ -135,16 +145,6 @@
                             "${imageViewer}",
                             'none',
                             'block'
-                        ],
-                        [
-                            "eid59",
-                            "opacity",
-                            1925,
-                            1250,
-                            "linear",
-                            "${innerShadow}",
-                            '0.000000',
-                            '1'
                         ]
                     ]
                 }
@@ -159,21 +159,20 @@
                 content: {
                     dom: [
                         {
-                            type: 'rect',
+                            transform: [[], [], [], ['0.05', '0.05']],
                             id: 'imageContainer',
                             opacity: '0.097938144329897',
                             rect: ['-120px', '160px', '280px', '280px', 'auto', 'auto'],
                             overflow: 'visible',
-                            transform: [[], [], [], ['0.05', '0.05']],
-                            boxShadow: ['', 1, 2, 2, 0, 'rgba(0,0,0,0.65098)'],
+                            fill: ['rgba(192,192,192,1)'],
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            fill: ['rgba(192,192,192,1)']
+                            type: 'rect',
+                            boxShadow: ['', 1, 2, 2, 0, 'rgba(0,0,0,0.65098)']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '900px', '400px']
+                            rect: [null, null, '900px', '400px']
                         }
                     }
                 },
@@ -288,5 +287,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("/Image%20Viewer_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("Image%20Viewer_edgeActions.js");
 })("EDGE-146736390");

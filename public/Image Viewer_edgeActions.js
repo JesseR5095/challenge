@@ -48,6 +48,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          			sym.$(element).css({"position" : "absolute"});
          			sym.$(element).css({"left" : 0});
          			sym.$(element).css({"top" : 0});
+         			sym.$(element).css({"user-select": "none"});
+         			sym.$(element).css({"-moz-user-select": "none"});
+         			sym.$(element).css({"-khtml-user-select": "none"});
+         			sym.$(element).css({"-webkit-user-select": "none"});
          			if (start > 2000)
          				sym.$(element).css({"z-index" : 0});
          			else if (start > 1000)
